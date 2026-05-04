@@ -1,0 +1,212 @@
+/* Smartspectrometer – Manual clasic cu accente teal */
+
+@page {
+  margin: 2.5cm 2cm 2.5cm 2cm;
+}
+
+body {
+  font-family: Georgia, 'Times New Roman', serif;
+  font-size: 11pt;
+  line-height: 1.65;
+  color: #111;
+}
+
+/* ── Titluri ── */
+h1 {
+  font-size: 20pt;
+  color: #111;
+  border-bottom: 2px solid #2eb8b8;
+  padding-bottom: 8px;
+  margin-bottom: 4px;
+}
+
+/* Titlul copertei — centrat, împins în jos */
+h1:first-of-type {
+  margin-top: 6cm;
+  text-align: center;
+  border-bottom: 2px solid #2eb8b8;
+  padding-bottom: 10px;
+}
+
+h1 + h2 {
+  font-size: 11pt;
+  font-weight: 400;
+  color: #444;
+  border-bottom: none;
+  margin-top: 0;
+  margin-bottom: 24px;
+}
+
+/* Subtitlul copertei — centrat */
+h1:first-of-type + h2 {
+  text-align: center;
+  margin-bottom: 28px;
+}
+
+h2 {
+  font-size: 14pt;
+  color: #111;
+  border-bottom: 1px solid #2eb8b8;
+  padding-bottom: 4px;
+  margin-top: 32px;
+}
+
+h3 {
+  font-size: 11.5pt;
+  color: #111;
+  margin-top: 20px;
+}
+
+h4 {
+  font-size: 11pt;
+  color: #333;
+  font-style: italic;
+  font-weight: 600;
+  margin-top: 14px;
+}
+
+/* ── Text ── */
+p {
+  color: #111;
+  margin: 0.4em 0 0.7em 0;
+}
+
+/* ── Callout-uri ── */
+blockquote {
+  border-left: 3px solid #2eb8b8;
+  margin: 1em 0;
+  padding: 8px 14px;
+  background: #f9fefe;
+  color: #111;
+  font-size: 10.5pt;
+}
+
+blockquote p {
+  margin: 0.2em 0;
+  color: #111;
+}
+
+/* ── Tabele ── */
+table {
+  border-collapse: collapse;
+  width: 100%;
+  font-size: 10pt;
+  margin: 1em 0;
+}
+
+th {
+  background: #0d3b4f;
+  color: white;
+  padding: 7px 10px;
+  text-align: left;
+  font-weight: 600;
+  font-family: 'Segoe UI', system-ui, sans-serif;
+  font-size: 9.5pt;
+}
+
+td {
+  padding: 6px 10px;
+  border-bottom: 1px solid #ddd;
+  color: #111;
+}
+
+tr:nth-child(even) td {
+  background: #f7f7f7;
+}
+
+/* ── Cod ── */
+code {
+  font-family: 'Consolas', 'Courier New', monospace;
+  font-size: 9.5pt;
+  background: #f4f4f4;
+  padding: 1px 4px;
+  border-radius: 2px;
+}
+
+pre {
+  background: #f4f4f4;
+  border-left: 3px solid #aaa;
+  padding: 10px 14px;
+  font-size: 9pt;
+  line-height: 1.5;
+}
+
+pre code {
+  background: none;
+  padding: 0;
+}
+
+/* ── Imagini ── */
+img {
+  max-width: 85%;
+  display: block;
+  margin: 12px auto;
+}
+
+/* Logo GeoEduLab — only on cover (first paragraph after cover subtitle) */
+h1 + h2 + p > img {
+  max-width: 160px;
+  margin: 16px auto 20px auto;
+  display: block;
+}
+
+/* Device photo on cover (second paragraph after cover subtitle) */
+h1 + h2 + p + p > img {
+  max-width: 70%;
+  margin: 8px auto 24px auto;
+}
+
+/* Component images in section 4 (after ### headings) */
+h3 + p > img {
+  max-width: 42%;
+  max-height: 160px;
+  margin: 8px auto 10px auto;
+}
+
+/* ── Liste ── */
+ul, ol {
+  color: #111;
+  padding-left: 1.6em;
+}
+
+li {
+  margin-bottom: 0.3em;
+}
+
+/* ── Linie orizontală ── */
+hr {
+  border: none;
+  border-top: 1px solid #ccc;
+  margin: 1.5em 0;
+}
+
+/* ── Secțiuni principale pe pagină nouă ── */
+h2 {
+  page-break-before: always;
+}
+
+/* Subtitlul de pe prima pagină (direct după H1) nu rupe */
+h1 + h2 {
+  page-break-before: avoid;
+}
+
+/* ── Link-uri ── */
+a {
+  color: #0d7070;
+}
+
+/* ── Footer prima pagină ── */
+.cover-footer {
+  margin-top: 32px;
+  border-top: 1px solid #ccc;
+  padding-top: 10px;
+  font-size: 9pt;
+  color: #555;
+  line-height: 1.5;
+}
+
+/* ── Legende imagini (italic) ── */
+em {
+  color: #555;
+  font-size: 9.5pt;
+}
