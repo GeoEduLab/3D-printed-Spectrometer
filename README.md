@@ -1,8 +1,10 @@
 # Smartspectrometer — Double-Beam Spectrophotometer
 
-A low-cost, open-source, 3D-printable double-beam spectrophotometer for students and teachers, developed by **GeoEduLab · INFP** (National Institute for Earth Physics, Romania).
+A low-cost, open-source, 3D-printable double-beam spectrophotometer for students and teachers.
 
-Built on the open-access design by Winters et al. (2021), adapted for educational use.
+Device designed by **Winters et al. (2021)**. Assembly and use manual developed by **GeoEduLab · INFP** (National Institute for Earth Physics, Romania).
+
+<img src="imagini/montat.png" width="480" alt="Assembled Smartspectrometer">
 
 ---
 
