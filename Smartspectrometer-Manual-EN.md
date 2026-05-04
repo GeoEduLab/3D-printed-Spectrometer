@@ -1,24 +1,3 @@
----
-stylesheet: pdf-style.css
-pdf_options:
-  displayHeaderFooter: true
-  headerTemplate: |
-    <div style="width:100%; font-family:system-ui,sans-serif; border-top:3px solid #0d3b4f; padding:4px 2cm 0 2cm; display:flex; justify-content:space-between; align-items:center; font-size:8px; color:#0d7070; -webkit-print-color-adjust:exact;">
-      <span style="font-weight:700; letter-spacing:1px;">SMARTSPECTROMETER · GEO EDU LAB</span>
-      <span style="color:#94a3b8;" class="pageNumber"></span>
-    </div>
-  footerTemplate: |
-    <div style="width:100%; font-family:system-ui,sans-serif; border-top:1px solid #e2e8f0; padding:0 2cm; display:flex; justify-content:space-between; align-items:center; font-size:8px; color:#94a3b8; -webkit-print-color-adjust:exact;">
-      <span>geoedulab.infp.ro</span>
-      <span>CC BY-SA 4.0</span>
-    </div>
-  margin:
-    top: 2.2cm
-    bottom: 2cm
-    left: 2cm
-    right: 2cm
----
-
 # The double-beam spectrophotometer
 ## Assembly and use manual for students and teachers
 
