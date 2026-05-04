@@ -324,6 +324,14 @@ Calibration converts pixel positions in the image into **real wavelengths** (nan
 
 Use **two sources with known wavelengths** simultaneously and capture their image.
 
+![Laser 405 nm and 656 nm — reference lines for calibration](imagini/spectrum_lasers_en.png)
+
+*Fig. — Red (656 nm) and violet (405 nm) lasers produce narrow lines that serve as calibration reference points.*
+
+![Fluorescent bulb (CFL) — warm vs. cool white, with mercury calibration lines](imagini/spectrum_cfl_comparison_en.png)
+
+*Fig. — A fluorescent bulb produces mercury lines (405, 436, 546, 578 nm) superimposed on a broad phosphor continuum. These lines are ideal for calibration.*
+
 ### 7.2 Calculating the calibration equation
 
 Identify in the ImageJ graph the pixel positions of the two calibration peaks (p₁, p₂) and calculate [1]:
@@ -376,7 +384,7 @@ Apply this equation to the pixel column exported from ImageJ to obtain the wavel
 
 > **💡 Did you know?** The incandescent bulb is extremely energy-inefficient: 95% of the energy consumed is emitted as heat (infrared), not visible light. That is why it has been replaced by LEDs!
 
-*[IMAGE: Incandescent bulb spectrum, to be added]*
+![Incandescent bulb spectrum (360–900 nm) — continuous spectrum extending into infrared](imagini/spectrum_incandescent_en.png)
 
 **What we expect to see:** Continuous spectrum, with intensity progressively increasing from violet to red. No discrete lines.
 
@@ -386,7 +394,7 @@ Apply this equation to the pixel column exported from ImageJ to obtain the wavel
 
 **Theory:** The fluorescent bulb contains electrically excited mercury vapor. Mercury emits light at precise wavelengths (line spectrum). The ultraviolet light produced is converted by the phosphor coating inside the tube into white visible light.
 
-*[IMAGE: Fluorescent bulb spectrum, to be added]*
+![Fluorescent bulb (CFL) spectrum — mercury lines at 436, 546, 578 nm on phosphor continuum](imagini/spectrum_cfl_calibration_en.png)
 
 **What we expect to see:** Distinct mercury lines visible on a continuous phosphor background:
 - 436 nm (violet)
@@ -401,7 +409,7 @@ Apply this equation to the pixel column exported from ImageJ to obtain the wavel
 
 **Theory:** A white LED doesn't actually emit white light; it combines a blue LED (≈460 nm) with a yellow phosphor layer that converts some of the blue light into a broad yellow-green-red spectrum.
 
-*[IMAGE: White LED spectrum, to be added]*
+![White LED spectra — cool, neutral and warm colour temperatures compared](imagini/spectrum_led_comparison_en.png)
 
 **What we expect to see:** A pronounced peak in the blue (≈460 nm) and a broad band between 500–700 nm. The spectrum is not continuous like that of an incandescent bulb.
 
@@ -411,7 +419,7 @@ Apply this equation to the pixel column exported from ImageJ to obtain the wavel
 
 **Theory:** A colored LED emits nearly monochromatic light, at a single wavelength (or a narrow band). The wavelength depends on the semiconductor material from which it is built.
 
-*[IMAGE: Red, green, blue LED spectra, to be added]*
+*See figure above (1.3) — notice how the blue peak and phosphor band shift between cool, neutral and warm colour temperatures.*
 
 **What we expect to see:** A single narrow peak at the characteristic wavelength of the LED:
 - Red LED: ≈620–660 nm
@@ -428,12 +436,14 @@ Apply this equation to the pixel column exported from ImageJ to obtain the wavel
 
 > ⚠️ **Never point the spectrophotometer directly at the Sun! Use light reflected from a matte white screen or a sheet of white paper.**
 
-*[IMAGE: Sunlight spectrum, to be added]*
+![Solar spectrum (360–900 nm) — Fraunhofer absorption lines at Ca 430, Na 589, Hα 656 nm](imagini/spectrum_sun_en.png)
 
 **What we expect to see:** Continuous spectrum with dark lines (absorption) at:
 - 589 nm (sodium, the D line)
 - 656 nm (hydrogen, the Hα line)
 - 430 nm (calcium)
+
+![Incandescent bulb vs. sunlight — spectral comparison](imagini/spectrum_bulb_vs_sun_en.png)
 
 ---
 
@@ -441,7 +451,7 @@ Apply this equation to the pixel column exported from ImageJ to obtain the wavel
 
 **Theory:** The flame emits light through the incandescence of carbon particles (soot) and through atomic emissions of burning substances. By adding salts to the flame, we can produce characteristic emission lines of different elements.
 
-*[IMAGE: Flame spectrum, to be added]*
+*[Flame spectrum image — to be captured during lab session]*
 
 **Additional experiment: Flame test:**
 - Introduce a small amount into the flame: table salt (NaCl → intense yellow, 589 nm), copper salt (blue-green), lithium salt (red)

@@ -324,6 +324,14 @@ Calibrarea transformă pozițiile în pixeli din imagine în **lungimi de undă 
 
 Folosiți **două surse cu lungimi de undă cunoscute** simultan și capturați imaginea lor.
 
+![Lasere 405 nm și 656 nm — linii de referință pentru calibrare](imagini/spectrum_lasers_ro.png)
+
+*Fig. — Laserele roșu (656 nm) și violet (405 nm) produc linii înguste care servesc drept puncte de referință pentru calibrare.*
+
+![Bec fluorescent (CFL) — alb cald vs. alb rece, cu linii de calibrare mercur](imagini/spectrum_cfl_comparison_ro.png)
+
+*Fig. — Becul fluorescent produce linii de mercur (405, 436, 546, 578 nm) suprapuse pe un continuu larg dat de fosfor. Aceste linii sunt ideale pentru calibrare.*
+
 ### 7.2 Calculul ecuației de calibrare
 
 Identificați în graficul ImageJ pozițiile în pixeli ale celor două vârfuri de calibrare (p₁, p₂) și calculați [1]:
@@ -376,7 +384,7 @@ Aplicați această ecuație coloanei de pixeli exportate din ImageJ pentru a ob�
 
 > **💡 Știați că?** Becul incandescent este extrem de ineficient energetic: 95% din energia consumată este emisă ca căldură (infraroșu), nu ca lumină vizibilă. De aceea a fost înlocuit de LED-uri!
 
-*[IMAGINE: Spectrul becului incandescent, de adăugat]*
+![Spectrul becului incandescent (360–900 nm) — spectru continuu ce se extinde în infraroșu](imagini/spectrum_incandescent_ro.png)
 
 **Ce ne așteptăm să vedem:** Spectru continuu, cu intensitate crescând progresiv de la violet spre roșu. Nu există linii discrete.
 
@@ -386,7 +394,7 @@ Aplicați această ecuație coloanei de pixeli exportate din ImageJ pentru a ob�
 
 **Teoria:** Becul fluorescent conține vapori de mercur excitați electric. Mercurul emite lumină la lungimi de undă precise (spectru de linii). Lumina ultravioletă produsă este convertită de stratul de pulbere fosforescente din tub în lumină vizibilă albă.
 
-*[IMAGINE: Spectrul becului fluorescent, de adăugat]*
+![Spectrul becului fluorescent (CFL) — linii de mercur la 436, 546, 578 nm pe fond continuu de fosfor](imagini/spectrum_cfl_calibration_ro.png)
 
 **Ce ne așteptăm să vedem:** Linii distincte de mercur vizibile pe un fond continuu dat de fosfor:
 - 436 nm (violet)
@@ -401,7 +409,7 @@ Aplicați această ecuație coloanei de pixeli exportate din ImageJ pentru a ob�
 
 **Teoria:** LED-ul alb nu emite de fapt alb; el combină un LED albastru (≈460 nm) cu un strat de fosfor galben care transformă o parte din lumina albastră în spectru larg galben-verde-roșu.
 
-*[IMAGINE: Spectrul LED alb, de adăugat]*
+![Spectrele LED alb — comparație temperaturi de culoare rece, neutru și cald](imagini/spectrum_led_comparison_ro.png)
 
 **Ce ne așteptăm să vedem:** Un vârf pronunțat în albastru (≈460 nm) și o bandă largă între 500–700 nm. Spectrul nu este continuu ca cel al becului incandescent.
 
@@ -411,7 +419,7 @@ Aplicați această ecuație coloanei de pixeli exportate din ImageJ pentru a ob�
 
 **Teoria:** Un LED colorat emite lumină aproape monocromatică, la o singură lungime de undă (sau o bandă îngustă). Lungimea de undă depinde de materialul semiconductor din care este construit.
 
-*[IMAGINE: Spectrele LED roșu, verde, albastru, de adăugat]*
+*Vezi figura de mai sus (1.3) — observați cum vârful albastru și banda de fosfor se deplasează între temperaturile de culoare rece, neutru și cald.*
 
 **Ce ne așteptăm să vedem:** Un singur vârf îngust la lungimea de undă caracteristică a LED-ului:
 - LED roșu: ≈620–660 nm
@@ -428,12 +436,14 @@ Aplicați această ecuație coloanei de pixeli exportate din ImageJ pentru a ob�
 
 > ⚠️ **Nu îndreptați niciodată spectrofotometrul direct spre Soare! Folosiți lumina reflectată de un ecran alb mat sau o foaie de hârtie albă.**
 
-*[IMAGINE: Spectrul luminii solare, de adăugat]*
+![Spectrul solar (360–900 nm) — liniile Fraunhofer de absorbție la Ca 430, Na 589, Hα 656 nm](imagini/spectrum_sun_ro.png)
 
 **Ce ne așteptăm să vedem:** Spectru continuu cu linii întunecate (absorbție) la:
 - 589 nm (sodiu, linia D)
 - 656 nm (hidrogen, linia Hα)
 - 430 nm (calciu)
+
+![Bec incandescent vs. lumina soarelui — comparație spectrală](imagini/spectrum_bulb_vs_sun_ro.png)
 
 ---
 
@@ -441,7 +451,7 @@ Aplicați această ecuație coloanei de pixeli exportate din ImageJ pentru a ob�
 
 **Teoria:** Flacăra emite lumină prin incandescența particulelor de carbon (fum) și prin emisiile atomice ale substanțelor arse. Adăugând săruri în flacără, putem produce linii de emisie caracteristice diferitelor elemente.
 
-*[IMAGINE: Spectrul flacării, de adăugat]*
+*[Imaginea spectrului flacării — de capturat în timpul sesiunii de laborator]*
 
 **Experiment suplimentar: Testul flacărei:**
 - Introduceți în flacără câte puțin din: sare de bucătărie (NaCl → galben intens, 589 nm), sare de cupru (verde-albastru), sare de litiu (roșu)
