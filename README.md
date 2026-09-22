@@ -17,6 +17,12 @@ Device designed by **Winters et al. (2021)**. Assembly and use manual developed 
 
 ---
 
+## Instruction Video
+
+A short video presentation of the assembly process: [Spectrometrul Printat 3D Asamblare](https://youtu.be/sLuob3aO6XI)
+
+---
+
 ## What's in this repo
 
 ```
