@@ -98,7 +98,7 @@ The DBS (*Double-Beam Spectrophotometer*) works as follows:
   LIGHT SOURCE
        │
        ▼
-  [Narrow slit]  ← 3D-printed (DBS23 card)
+  [Narrow slit]  ← 3D-printed card (0.25 / 0.5 / 1 mm)
        │
        │  beam 1 → passes through the SAMPLE (solution to be analyzed)
   [Sample holder]
@@ -160,9 +160,9 @@ The spectrophotometer is made from 3D-printed parts and a few purchased componen
 ### 4.2 Sample Holder / Slit Mount (DBS02)
 
 ![DBS02 – Sample Holder](imagini/DBS02.png)
-*A solid rectangular block with two compartments visible on the upper right; these are the cuvette slots for the sample and reference solutions. DBS02 also directly houses the slit assembly (DBS23 wedges and scalpel blades).*
+*A solid rectangular block with two compartments visible on the upper right; these are the cuvette slots for the sample and reference solutions. DBS02 also houses the slit card.*
 
-**Role:** The central piece of the instrument. Contains two cuvette slots (sample and reference) and directly houses the slit sub-assembly (DBS23 + blades). Light passes through the slit and both cuvettes simultaneously, creating the two beams.
+**Role:** The central piece of the instrument. Contains two cuvette slots (sample and reference) and directly houses the slit card. Light passes through the slit and both cuvettes simultaneously, creating the two beams.
 
 ---
 
@@ -193,15 +193,17 @@ The spectrophotometer is made from 3D-printed parts and a few purchased componen
 
 ---
 
-### 4.6 Slit Card (DBS23)
+### 4.6 Slit cards (0.25 / 0.5 / 1 mm)
 
-![DBS23 – Slit Card](imagini/DBS23.png)
+![Slit cards of 0.25, 0.5 and 1 mm](imagini/fante_noi.png)
 
-*A thin rectangular plate with rounded corners and a narrow horizontal slit in the center, 3D-printed directly into the card. Mounts in front of the sample in the Sample Holder (DBS02).*
+*Three 3D-printed cards, 38 × 25 × 1 mm, each with a 32 mm long slit and its width engraved on it. They go into the slit slot of the Sample Holder (DBS02), in front of the sample. The files are in the `new_parts/slits` folder of this repository.*
 
-**Role:** The card carries the **light slit**, the most delicate part of the instrument. The slit is 3D-printed directly into the card. The slit width determines the spectral resolution.
+**Role:** The card carries the **light slit**, the most delicate part of the instrument. The slit width sets the spectral resolution: a narrow slit gives thinner lines but lets less light through.
 
-> **💡 Experiment!** Custom slits can be made from black cardboard using a craft knife. This lets you test the importance of slit width: a narrower slit gives better spectral resolution but allows less light through.
+**Why 0.25 / 0.5 / 1 mm:** the printer (0.4 mm nozzle) closes a 0.05 mm slit completely. From 0.1 mm up the printed gap follows the drawing, but on the part it comes out somewhat narrower and below ~0.2 mm the edges can fuse. The narrowest slit is therefore 0.25 mm and each next one is twice as wide, so the difference is visible by eye.
+
+> **💡 Experiment!** Measure the same bulb with all three cards and compare the line width and the brightness of the spectrum. The test card (12 widths, 0.05 to 1.2 mm) shows which widths your printer actually opens: hold it in front of a bulb and keep the slits that are open along their whole length.
 
 ---
 
@@ -215,42 +217,66 @@ The spectrophotometer is made from 3D-printed parts and a few purchased componen
 
 ---
 
+### 4.8 Grating frame and cutting jig
+
+![Grating frame and cutting jig](imagini/rama_retea_jig.png)
+
+*A printed frame made of two halves (A with a pocket and 6 pins, flat B with the white lettering "1000/mm" and an arrow) and the jig that cuts the film strip into 4 equal pieces. The files are in the `new_parts/grating_frame` folder.*
+
+**Role:** Holds the piece of diffraction film (AstroMedia GW-1000, 1000 lines/mm) flat and in place in the side slot of DBS03, instead of the cardboard frame of the kit. The 37 × 27 mm window is centred on the opening of DBS03; the notched end stays ~2 mm outside so the frame comes out easily.
+
+---
+
 ## 5. Step-by-step assembly
 
 ![Exploded view: all spectrophotometer parts](imagini/ansamblu.png)
 *Exploded view of the spectrophotometer: from left to right, the slit mount with diffraction grating, the sample holder (central piece with cuvette slots), the tube adapter, and the grating mount with the camera/smartphone holder.*
 
+### Step 0: Preparing the diffraction grating (frame and jig)
+
+**You need:** GW-1000 film strip (153 × 39 mm), the jig (base + lid), one frame (halves A and B), a craft knife, tweezers
+
+**0a.** Lay the strip in the pocket of the jig base and push it against the left wall (engraved arrow). Touch the film only at its edges.
+
+**0b.** Put the lid on: the 4 pins go into the holes of the base and the numbers 1–4 must read the right way.
+
+**0c.** Run the knife through each of the 3 slots; the blade drops into a channel in the base and cuts the film through. Lift the pieces (38.25 × 39 mm) with tweezers.
+
+**0d.** Lay one piece in the pocket of half A and press B onto A, lettering outwards. The pins press-fit, no glue needed.
+
+**Result:** The grating frame is ready. One strip gives 4 frames. ✓
+
+---
+
 ### Step 1: Installing the slit card
 
-The light slit is **3D-printed directly** into card DBS23, which slides into the Sample Holder (DBS02).
+**You need:** DBS02 (1×), one slit card (0.25, 0.5 or 1 mm; start with 0.5 mm)
 
-**You need:** DBS02 (1×), DBS23 (1×)
+**1a.** Check that DBS02 and the card are clean and free of print burrs, and that the slit is open along its whole length when you hold the card against a bulb.
 
-**1a.** Check that DBS02 and DBS23 are clean and free of print burrs.
+**1b.** Insert the card into the slit slot of DBS02, in front of the sample position. The slit must be horizontal.
 
-**1b.** Insert card DBS23 into the corresponding slot in DBS02, in front of the sample position. The slit must be centered and horizontal.
-
-**1c.** Press gently until the card sits firmly in the slot.
+**1c.** Push it all the way down: the card sits slightly below the rim of DBS02. To change it, take it out by turning DBS02 over.
 
 **Result:** The slit card is installed; light will pass through the printed slit toward the cuvettes. ✓
 
-> **💡 Alternative:** You can replace the printed card with one cut from black cardboard using a craft knife, to test different slit widths, understanding how a professional spectrophotometer works depending on the intensity of light.
+> **💡 Alternative:** You can also cut a slit in black cardboard with a craft knife and compare it with the printed ones.
 
 ---
 
 ### Step 2: Assembling the main body
 
-**You need:** sub-assembly from Step 1, DBS01, DBS02, DBS03, DBS04, DBS05, GP01
+**You need:** sub-assembly from Step 1, DBS01, DBS03, DBS04, DBS05, grating frame (Step 0)
 
-**2a.** Insert the slit sub-assembly (Step 1) into **DBS02**, with the slit close to the cuvette slots.
+**2a.** Check that DBS02 has the slit card installed (Step 1).
 
 **2b.** Insert **DBS01 (Slit Tube)** into DBS02 in the correct orientation (see Fig. 4 in the article [1]).
 
 **2c.** Mount **DBS03** onto **DBS04**, then insert this assembly onto DBS02 + DBS01. Tube DBS01 will extend beyond DBS04, interlocking everything; this ensures rigidity and ambient light-tightness [1].
 
-**2d.** Insert the **diffraction grating (GP01)** into the side slot of DBS03.
+**2d.** Insert the **grating frame** into the side slot of DBS03, **arrow tip first**, all the way in; the notched end stays ~2 mm outside.
 
-> ⚠️ **Important:** The diffraction grating must be inserted with the **lines (blazes) horizontal**. Wrong orientation distorts the spectra!
+> ⚠️ **Important:** The grating lines must be **horizontal** in DBS03. The pocket of the frame accepts the film piece in both orientations, so check at a bulb before measuring: if the spectrum comes out wrong, open the frame and turn the piece by 90°.
 
 **2e.** Insert **DBS05 (Source Adapter)** on the opposite end of DBS02.
 
@@ -503,11 +529,11 @@ Apply this equation to the pixel column exported from ImageJ to obtain the wavel
 | Parts don't fit | Print burrs | Clean with blade/file (see Appendix B) [1] |
 | Image is black or too dark | Camera misaligned or low exposure | Check alignment; increase camera ISO |
 | Image is completely white (overexposed) | Source too strong | Reduce ISO or exposure time |
-| See two overlapping spectra | Grating GP01 oriented incorrectly | Flip the grating; lines (blazes) must be horizontal [1] |
+| See two overlapping spectra | Film piece in the frame oriented incorrectly | Open the frame and turn the piece by 90°; lines must be horizontal [1] |
 | Spectrum is blurry, diffuse | Wrong focus | Rotate USB camera lens; clean smartphone lens |
 | Results vary between sessions | Camera has moved | Recalibrate at each new session [1] |
 | Ambient light entering instrument | Parts not fully inserted | Check all parts are firmly seated; use DBS10 |
-| Slit is not symmetric | DBS23 wedge not fully inserted | Tap gently with rubber mallet until flush [1] |
+| Slit not open / spectrum very faint | Printed slit partly closed | Use a wider card or check your printer with the test card |
 | Calibration gives wrong values | Calibration peaks misidentified | Verify p₁ corresponds to λ₁ and p₂ to λ₂ |
 
 ---
@@ -524,6 +550,7 @@ https://doi.org/10.1016/j.ohx.2021.e00232
 | Resource | Link |
 |----------|------|
 | STL files and documentation | https://osf.io/7ewb3 |
+| New GeoEduLab parts (slits, frame, jig) | https://github.com/GeoEduLab/3D-printed-Spectrometer/tree/main/new_parts |
 | ImageJ software | https://imagej.nih.gov/ |
 | Editable online CAD design | https://www.onshape.com/ |
 | Open-source spectroscopy community | https://publiclab.org |

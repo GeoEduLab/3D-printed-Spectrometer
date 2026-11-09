@@ -26,10 +26,23 @@ A short video presentation of the assembly process: [Spectrometrul Printat 3D As
 ## What's in this repo
 
 ```
-imagini/          Component photos and assembly diagrams
-pdf-style.css     CSS stylesheet for PDF generation
-stl/              3D-printable parts (STL files at osf.io/7ewb3)
+imagini/                 Component photos and assembly diagrams
+new_parts/slits/         Slit cards 0.25 / 0.5 / 1 mm + 12-width test card (STL, 3MF)
+new_parts/grating_frame/ Frame for the diffraction film + jig that cuts the strip in 4 (STL, 3MF)
+pdf-style.css            CSS stylesheet for PDF generation
+md-to-pdf.config.json    md-to-pdf settings for the PDF manuals
 ```
+
+The original parts (DBS01-DBS25) are at https://osf.io/7ewb3.
+
+---
+
+## New parts (GeoEduLab, 2026)
+
+Printed slit cards and a frame for the grating film, with a cutting jig, that fit the original DBS02 and DBS03.
+Details, print settings and instructions: [new_parts/README.md](new_parts/README.md).
+
+<img src="new_parts/grating_frame/RamaRetea_previzualizare_v1.5.png" width="480" alt="Grating frame and cutting jig">
 
 ---
 

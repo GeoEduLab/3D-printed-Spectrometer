@@ -98,7 +98,7 @@ Spectrofotometrul DBS (*Double-Beam Spectrophotometer*, Spectrofotometru cu Dubl
   SURSA DE LUMINA
        │
        ▼
-  [Fanta ingusta]  ← imprimata 3D (card DBS23)
+  [Fanta ingusta]  ← cartonas tiparit 3D (0,25 / 0,5 / 1 mm)
        │
        │  raza 1 → trece prin PROBA (solutia de analizat)
   [Suport proba]
@@ -160,9 +160,9 @@ Spectrofotometrul este format din piese imprimate 3D și câteva componente achi
 ### 4.2 Suportul probă și suportul fantei (DBS02)
 
 ![DBS02 – Suport probă](imagini/DBS02.png)
-*Bloc dreptunghiular masiv cu două compartimente vizibile în partea dreaptă sus; acestea sunt sloturile pentru cuvele cu probă și referință. DBS02 găzduiește totodată subansamblul fantei (penele DBS23 cu lamele de bisturiu).*
+*Bloc dreptunghiular masiv cu două compartimente vizibile în partea dreaptă sus; acestea sunt sloturile pentru cuvele cu probă și referință. DBS02 găzduiește totodată cartonașul cu fantă.*
 
-**Rol:** Piesa centrală a instrumentului. Conține două sloturi pentru cuve (probă și referință) și găzduiește direct subansamblul fantei (DBS23 + lame). Lumina trece prin fantă și prin ambele cuve simultan, creând cele două raze.
+**Rol:** Piesa centrală a instrumentului. Conține două sloturi pentru cuve (probă și referință) și găzduiește direct cartonașul cu fantă. Lumina trece prin fantă și prin ambele cuve simultan, creând cele două raze.
 
 ---
 
@@ -193,15 +193,17 @@ Spectrofotometrul este format din piese imprimate 3D și câteva componente achi
 
 ---
 
-### 4.6 Cardul cu fantă (DBS23)
+### 4.6 Cartonașele cu fantă (0,25 / 0,5 / 1 mm)
 
-![DBS23 – Card fantă](imagini/DBS23.png)
+![Cartonașele cu fantă de 0,25, 0,5 și 1 mm](imagini/fante_noi.png)
 
-*Placă subțire dreptunghiulară cu colțuri rotunjite și o fantă orizontală îngustă în centru, imprimată 3D. Se montează înaintea probei în Suportul probă (DBS02).*
+*Trei cartonașe tipărite 3D, de 38 × 25 × 1 mm, fiecare cu o fantă de 32 mm lungime și lățimea gravată pe el. Se pun în locașul fantei din Suportul probă (DBS02), înaintea probei. Fișierele sunt în dosarul `new_parts/slits` al acestui repository.*
 
-**Rol:** Cardul are **fanta de lumină**, cea mai delicată parte a instrumentului. Aceasta este imprimată 3D direct în card. Lățimea fantei determină rezoluția spectrală.
+**Rol:** Cartonașul are **fanta de lumină**, cea mai delicată parte a instrumentului. Lățimea fantei determină rezoluția spectrală: o fantă îngustă dă linii mai subțiri, dar lasă să treacă mai puțină lumină.
 
-> **💡 Experimentați!** Se pot realiza diferite fante din carton negru cu ajutorul unui cutter. Astfel puteți testa importanța dimensiunii fantei: o fantă mai îngustă oferă rezoluție spectrală mai bună, dar lasă să treacă mai puțină lumină.
+**De ce 0,25 / 0,5 / 1 mm:** imprimanta (duza de 0,4 mm) închide complet o fantă de 0,05 mm. De la 0,1 mm în sus golul tipărit urmează desenul, dar pe piesă iese ceva mai îngust, iar sub ~0,2 mm marginile se pot lipi. De aceea cea mai îngustă fantă are 0,25 mm, iar fiecare următoare e de două ori mai lată, ca diferența să se vadă cu ochiul.
+
+> **💡 Experimentați!** Măsurați același bec cu toate trei cartonașele și comparați lățimea liniilor și cât de luminos e spectrul. Cu cartonașul de probă (12 lățimi, de la 0,05 la 1,2 mm) puteți afla ce lățimi deschide de fapt imprimanta voastră: îl țineți în fața unui bec și păstrați fantele deschise pe toată lungimea.
 
 ---
 
@@ -215,42 +217,66 @@ Spectrofotometrul este format din piese imprimate 3D și câteva componente achi
 
 ---
 
+### 4.8 Rama rețelei de difracție și jig-ul de tăiat
+
+![Rama rețelei și jig-ul de tăiat](imagini/rama_retea_jig.png)
+
+*Rama tipărită din două jumătăți (A cu locaș și 6 știfturi, B plană cu scrisul alb „1000/mm" și o săgeată) și jig-ul care taie banda de folie în 4 bucăți egale. Fișierele sunt în dosarul `new_parts/grating_frame`.*
+
+**Rol:** Ține bucata de folie de difracție (AstroMedia GW-1000, 1000 linii/mm) plană și la locul ei în fanta laterală a lui DBS03, în locul ramei de carton din kit. Fereastra de 37 × 27 mm e centrată pe deschiderea lui DBS03, iar capătul cu crestătură rămâne ~2 mm afară, ca să scoateți rama ușor.
+
+---
+
 ## 5. Asamblarea pas cu pas
 
 ![Spectrofotometrul asamblat](imagini/montat.png)
 *Spectrofotometrul complet asamblat. Se observă fanta de lumină (deschiderea dreptunghiulară albă) pe fața frontală și suportul pentru cameră/smartphone montat deasupra corpului principal.*
 
-### Pasul 1: Montarea cardului cu fantă
+### Pasul 0: Pregătirea rețelei de difracție (rama și jig-ul)
 
-Fanta de lumină este **imprimată 3D direct** în cardul DBS23, care se introduce în Suportul probă (DBS02).
+**Ai nevoie de:** banda de folie GW-1000 (153 × 39 mm), jig-ul (bază + capac), o ramă (jumătățile A și B), un cutter, o pensetă
 
-**Ai nevoie de:** DBS02 (1×), DBS23 (1×)
+**0a.** Puneți banda în buzunarul bazei jig-ului și împingeți-o în peretele din stânga (săgeata gravată). Țineți folia doar de margini.
 
-**1a.** Verificați că DBS02 și DBS23 sunt curate și fără bavuri după imprimare.
+**0b.** Puneți capacul: cele 4 știfturi intră în găurile bazei, iar cifrele 1–4 trebuie să se citească corect.
 
-**1b.** Introduceți cardul DBS23 în slotul corespunzător din DBS02, înaintea poziției probei. Fanta trebuie să fie centrată și orizontală.
+**0c.** Trageți cutterul prin fiecare din cele 3 fante; lama coboară într-un canal din bază și taie folia până la capăt. Ridicați bucățile (38,25 × 39 mm) cu penseta.
 
-**1c.** Apăsați ușor până cardul stă ferm în slot.
+**0d.** Puneți o bucată în locașul din jumătatea A și apăsați B peste A, cu scrisul în afară. Știfturile intră presat, fără lipici.
+
+**Rezultat:** Rama cu rețeaua este gata. Din bandă ies 4 rame. ✓
+
+---
+
+### Pasul 1: Montarea cartonașului cu fantă
+
+**Ai nevoie de:** DBS02 (1×), un cartonaș cu fantă (0,25, 0,5 sau 1 mm; pentru început 0,5 mm)
+
+**1a.** Verificați că DBS02 și cartonașul sunt curate și fără bavuri după imprimare, iar fanta se vede deschisă pe toată lungimea când țineți cartonașul spre un bec.
+
+**1b.** Introduceți cartonașul în locașul fantei din DBS02, înaintea poziției probei. Fanta trebuie să fie orizontală.
+
+**1c.** Împingeți până la fund: cartonașul rămâne puțin sub marginea lui DBS02. Pentru schimbare, scoateți-l întorcând DBS02.
 
 **Rezultat:** Cardul cu fantă este montat; lumina va trece prin fanta imprimată spre cuve. ✓
 
-> **💡 Alternativă:** Puteți înlocui cardul imprimat cu unul decupat din carton negru cu un cutter, pentru a testa diferite lățimi ale fantei, înțelegând cum funcționează un spectrofotometru profesional în funcție de intensitatea luminii.
+> **💡 Alternativă:** Puteți decupa și o fantă din carton negru cu un cutter, pentru a o compara cu cele tipărite.
 
 ---
 
 ### Pasul 2: Asamblarea corpului principal
 
-**Ai nevoie de:** subansamblul de la Pasul 1, DBS01, DBS02, DBS03, DBS04, DBS05, GP01
+**Ai nevoie de:** subansamblul de la Pasul 1, DBS01, DBS03, DBS04, DBS05, rama cu rețeaua (Pasul 0)
 
-**2a.** Introduceți subansamblul fantei (Pasul 1) în **DBS02**, cu fanta aproape de sloturile pentru cuve.
+**2a.** Verificați că DBS02 are cartonașul cu fantă montat (Pasul 1).
 
 **2b.** Introduceți **DBS01 (Tubul fantă)** în DBS02 în orientarea corectă (consultați Fig. 4 din articol [1]).
 
 **2c.** Montați **DBS03** pe **DBS04**, apoi introduceți acest ansamblu pe DBS02 + DBS01. Tubul DBS01 se va prelungi dincolo de DBS04, interblocând totul; aceasta asigură rigiditate și etanșeitate la lumina ambientală [1].
 
-**2d.** Introduceți **rețeaua de difracție (GP01)** în slotul lateral al DBS03.
+**2d.** Introduceți **rama cu rețeaua** în fanta laterală a lui DBS03, **cu vârful săgeții înainte**, până la fund; capătul cu crestătură rămâne ~2 mm afară.
 
-> ⚠️ **Important:** Rețeaua de difracție trebuie introdusă cu **liniile (blazele) orizontale**. Orientarea greșită distorsionează spectrele!
+> ⚠️ **Important:** Liniile rețelei trebuie să fie **orizontale** în DBS03. Locașul ramei primește bucata de folie în ambele orientări, așa că verificați la un bec înainte de măsurători: dacă spectrul iese greșit, desfaceți rama și rotiți bucata cu 90°.
 
 **2e.** Introduceți **DBS05 (Adaptorul sursă)** pe capătul opus al DBS02.
 
@@ -503,11 +529,11 @@ Aplicați această ecuație coloanei de pixeli exportate din ImageJ pentru a ob�
 | Piesele nu se potrivesc | Bavuri după imprimare | Curăț cu lamă/pilă (vezi Anexa B) [1] |
 | Imaginea e neagră sau prea întunecată | Camera nealiniată sau expunere mică | Verific alinierea; cresc ISO-ul camerei |
 | Imaginea e complet albă (supraexpusă) | Sursă prea puternică | Reduc ISO-ul sau timpul de expunere |
-| Văd două spectre suprapuse | Rețeaua GP01 orientată greșit | Întorc rețeaua; liniile (blazele) trebuie să fie orizontale [1] |
+| Văd două spectre suprapuse | Folia din ramă e orientată greșit | Desfac rama și rotesc bucata cu 90°; liniile trebuie să fie orizontale [1] |
 | Spectrul e neclar, difuz | Focus greșit | Rotesc obiectivul camerei USB; curăț lentila smartphone-ului |
 | Rezultatele variază între sesiuni | Camera s-a mișcat | Recalibrez la fiecare sesiune nouă [1] |
 | Lumina ambientală intră în instrument | Piese necomplet introduse | Verific că toate piesele sunt bine fixate; folosesc DBS10 |
-| Fanta nu e simetrică | Pana DBS23 incomplet introdusă | Bat ușor cu ciocan de cauciuc până la capăt [1] |
+| Fanta nu se vede deschisă / spectrul e foarte slab | Fanta tipărită s-a închis parțial | Folosesc un cartonaș mai lat sau verific imprimanta cu cartonașul de probă |
 | Calibrarea dă valori greșite | Vârfuri de calibrare identificate greșit | Verific că p₁ corespunde lui λ₁ și p₂ lui λ₂ |
 
 ---
@@ -524,6 +550,7 @@ https://doi.org/10.1016/j.ohx.2021.e00232
 | Resursă | Link |
 |---------|------|
 | Fișiere STL și documentație | https://osf.io/7ewb3 |
+| Piesele noi GeoEduLab (fante, ramă, jig) | https://github.com/GeoEduLab/3D-printed-Spectrometer/tree/main/new_parts |
 | Software ImageJ | https://imagej.nih.gov/ |
 | Design CAD editabil online | https://www.onshape.com/ |
 | Comunitate open-source spectroscopie | https://publiclab.org |
